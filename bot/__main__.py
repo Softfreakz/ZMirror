@@ -125,7 +125,7 @@ async def start(_, message):
                        'Now I will all files in your DM 😉.\n' \
                        'To use me join @Softleech'
     else:
-        start_string = 'Sorry! Bro but you can't use me here!\n' \
+        start_string = 'Sorry! Bro but you cant use me here!\n' \
                        'Join @Softleech to use me.\n' \
                        'Thank You ❤️'
     await sendMessage(message, start_string)
