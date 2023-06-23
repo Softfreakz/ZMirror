@@ -121,8 +121,8 @@ async def start(_, message):
         msg += f'Validity: {get_readable_time(int(config_dict["TOKEN_TIMEOUT"]))}'
         return await sendMessage(message, msg)
     elif config_dict['DM_MODE']:
-        start_string = 'Bot Started 😎.\n' \
-                       'Now I will all files in your DM 😉.\n' \
+        start_string = 'Bot Started! 😎\n' \
+                       'Now I will send all files in your DM 😉\n' \
                        'To use me join @Softleech'
     else:
         start_string = 'Sorry! Bro but you cant use me here!\n' \
