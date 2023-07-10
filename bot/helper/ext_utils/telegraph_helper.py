@@ -102,5 +102,5 @@ class TelegraphHelper:
 
 
 telegraph = TelegraphHelper(
-    'Soft Leech', 't.me/Softleech')
+    'Z-Mirror', 'https://github.com/Dawn-India/Z-Mirror')
 bot_loop.run_until_complete(telegraph.create_account())
