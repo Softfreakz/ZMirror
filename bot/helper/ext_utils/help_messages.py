@@ -160,7 +160,7 @@ Some links need user access so sure you must add USER_SESSION_STRING for it.
 1. Commands that start with <b>qb</b> are ONLY for torrents.
 2. Read all arguments <a href='https://graph.org/Z-Mirror-Bot-Arguments-06-10'>HERE</a>.
 
-<b>Mirror Files accessiable by Premium Bot Subscribers Only! For details contact @Softleech Admin</b>
+<b>Mirror Files accessible by Premium Bot Subscribers Only! For details contact @Softleech Admin</b>
 """
 
 RSS_HELP_MESSAGE = """
@@ -206,7 +206,7 @@ drive_id must be folder id and index must be url else it will not accept
 
 <b><u>Note</u></b>: If -up not specified then rclone destination will be the RCLONE_PATH from config.env
 
-<b>Clone Files accessiable by Premium Bot Subscribers Only! For details contact @Softleech Admin</b>
+<b>Clone Files accessible by Premium Bot Subscribers Only! For details contact @Softleech Admin</b>
 """
 
 CAT_SEL_HELP_MESSAGE = """
