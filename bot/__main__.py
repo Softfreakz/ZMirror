@@ -123,10 +123,10 @@ async def start(_, message):
     elif config_dict['DM_MODE']:
         start_string = 'Bot Started! 😎\n' \
                        'Now I will send all files in your DM 😉\n' \
-                       'To use me join @Softleech'
+                       'To use me join @Softleech & Subscribe @softleechgroup for Updates!'
     else:
         start_string = 'Sorry! Bro but you cant use me here!\n' \
-                       'Join @Softleech to use me.\n' \
+                       'Join @Softleech to use me & Subscribe @softleechgroup for Updates!\n' \
                        'Thank You ❤️'
     await sendMessage(message, start_string)
 
