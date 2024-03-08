@@ -54,11 +54,11 @@ async def stop_duplicate_tasks(message, link, file_=None):
 async def none_admin_utils(message, isLeech=False):
     msg = []
     if isLeech and config_dict['DISABLE_LEECH']:
-        msg.append('Leech is disabled on this bot.\n💡Use other bots;)')
+        msg.append('Leech is disabled on this bot.\n💡Contact admin for details;)')
     if filtered := await message_filter(message):
         msg.append(filtered)
     if (maxtask := config_dict['USER_MAX_TASKS']) and await check_user_tasks(message.from_user.id, maxtask):
-        msg.append(f"Your tasks limit exceeded!\n💡Use other bots.\n\nTasks limit: {maxtask}")
+        msg.append(f"Your tasks limit exceeded!\n💡Wait for completion of other tasks!\n\nTasks limit: {maxtask}")
     button = None
     if message.chat.type != message.chat.type.PRIVATE:
         token_msg, button = await checking_access(message.from_user.id, button)
