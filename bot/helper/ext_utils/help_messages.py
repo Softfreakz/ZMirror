@@ -162,7 +162,7 @@ Some links need user access so sure you must add USER_SESSION_STRING for it.
 
 <b><u>NOTES</u></b>:
 1. Commands that start with <b>qb</b> are ONLY for torrents.
-2. Read all arguments <a href='https://graph.org/Z-Mirror-Bot-Arguments-06-10'>HERE</a>.
+2. Contact Admin <a href='https://t.me/Softleech'>HERE</a>.
 
 <b>Powered By @Softleech</b>
 """
