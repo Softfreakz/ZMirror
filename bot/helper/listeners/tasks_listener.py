@@ -401,18 +401,18 @@ class MirrorLeechListener:
         LOGGER.info(f'Done Uploading {name}')
         lmsg = f'<b><i>{escape(name)}</i></b>'
         lmsg += f'\n<b>cc</b>: <i>{self.tag}</i>'
-        gmsg = f'Hey <b>{self.tag}</b>!\nYour job is done.'
-        msg = f'\n\n<code>Size            </code>: {get_readable_file_size(size)}'
-        msg += f"\n<code>Elapsed         </code>: {get_readable_time(time() - self.extra_details['startTime'])}"
-        msg += f"\n<code>Upload          </code>: {self.extra_details['mode']}"
+        gmsg = f'Hey <b>{self.tag}</b>!\nYour job is done ✅'
+        msg = f'\n\n<code>File Size 💾            </code>: {get_readable_file_size(size)}'
+        msg += f"\n<code>Time Taken ⏰         </code>: {get_readable_time(time() - self.extra_details['startTime'])}"
+        msg += f"\n<code>Mode 📤          </code>: {self.extra_details['mode']}"
         _msg = '' if rclonePath == '' else f'\n\n<code>Path            </code>: {rclonePath}'
-        msg_ = '\n\n<b><i>Link has been sent in your DM.</i></b>'
+        msg_ = '\n\n<b><i>Link has been sent in your DM 😎</i></b>'
         buttons = ButtonMaker()
         if self.isLeech:
-            msg += f'\n<code>Total Files     </code>: {folders}\n'
+            msg += f'\n<code>Total Files 📂    </code>: {folders}\n'
             if mime_type != 0:
                 msg += f'<code>Corrupted Files</code> : {mime_type}\n'
-            msg_ = '\n<b><i>Files has been sent in your DM.</i></b>'
+            msg_ = '\n<b><i>Files has been sent in your DM 😎</i></b>'
             if not self.dmMessage:
                 if not files:
                     await sendMessage(self.message, lmsg + msg)
