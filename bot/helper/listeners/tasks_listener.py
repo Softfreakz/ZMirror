@@ -487,7 +487,7 @@ class MirrorLeechListener:
                 elif not rclonePath:
                     INDEX_URL = self.index_link if self.drive_id else config_dict['INDEX_URL']
                     if INDEX_URL:
-                        share_url = f"{INDEX_URL}/{url_path}"
+                        share_url = f"{INDEX_LINK}/{FILE_NAME}"
                         if mime_type == "Folder":
                             buttons.ubutton("📁 Direct Link", share_url)
                         else:
