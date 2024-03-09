@@ -487,13 +487,13 @@ class MirrorLeechListener:
                 elif not rclonePath:
                     INDEX_URL = self.index_link if self.drive_id else config_dict['INDEX_URL']
                     if INDEX_URL:
-                        share_url = f"{INDEX_URL}{name}"
+                        share_url = f"{INDEX_URL}/{name}"
                         if mime_type == "Folder":
                             buttons.ubutton("📁 Direct Link", share_url)
                         else:
                             buttons.ubutton("🔗 Direct Link", share_url)
                             if mime_type.startswith(("image", "video", "audio")):
-                                share_urls = f"https://softstream.pages.dev/"
+                                share_urls = f"https://softstream.pages.dev"
                                 buttons.ubutton("🌐 Softstream", share_urls)
                 buttons = extra_btns(buttons)
                 if self.dmMessage:
