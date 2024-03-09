@@ -493,8 +493,8 @@ class MirrorLeechListener:
                         else:
                             buttons.ubutton("🔗 Direct Link", share_url)
                             if mime_type.startswith(("image", "video", "audio")):
-                                share_urls = f"https://softstream.pages.dev"
-                                buttons.ubutton("🌐 Softstream", share_urls)
+                                share_urls = f"{INDEX_URL}findpath?id={dir_id}&view=true"
+                                buttons.ubutton("🌐 View Link", share_urls)
                 buttons = extra_btns(buttons)
                 if self.dmMessage:
                     await sendMessage(self.dmMessage, lmsg + msg + _msg, buttons.build_menu(2))
