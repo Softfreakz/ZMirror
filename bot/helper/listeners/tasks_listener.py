@@ -402,9 +402,9 @@ class MirrorLeechListener:
         lmsg = f'<b><i>{escape(name)}</i></b>'
         lmsg += f'\n<b>cc</b>: <i>{self.tag}</i>'
         gmsg = f'Hey <b>{self.tag}</b>!\nYour job is done ✅'
-        msg = f'\n\n<code>File Size 💾            </code>: {get_readable_file_size(size)}'
-        msg += f"\n<code>Time Taken ⏰         </code>: {get_readable_time(time() - self.extra_details['startTime'])}"
-        msg += f"\n<code>Mode 📤          </code>: {self.extra_details['mode']}"
+        msg = f'\n\n<code>File Size 💾          </code>: {get_readable_file_size(size)}'
+        msg += f"\n<code>Time Taken ⏰      </code>: {get_readable_time(time() - self.extra_details['startTime'])}"
+        msg += f"\n<code>Mode 📤           </code>: {self.extra_details['mode']}"
         _msg = '' if rclonePath == '' else f'\n\n<code>Path            </code>: {rclonePath}'
         msg_ = '\n\n<b><i>Link has been sent in your DM 😎</i></b>'
         buttons = ButtonMaker()
