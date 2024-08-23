@@ -1073,7 +1073,7 @@ async def rssMonitor():
                         feed_msg = f"<b>Name: </b><code>{item_title.replace('>', '').replace('<', '')}</code>\n\n"
                         feed_msg += f"<b>Link: </b><code>{url}</code>"
                     feed_msg += (
-                        f"\n<b>Tag: </b><code>{data['tag']}</code> <code>{user}</code>"
+                        f"\n<b>Powered By:</b> @Softleech"
                     )
                     await sendRss(feed_msg)
                     feed_count += 1
