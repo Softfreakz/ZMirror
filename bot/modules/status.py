@@ -67,8 +67,8 @@ async def mirror_status(_, message):
     if count == 0:
         currentTime = get_readable_time(time() - botStartTime) # type: ignore
         free = get_readable_file_size(disk_usage(DOWNLOAD_DIR).free)
-        msg = "Stop it!\nGet some help!\n\nNo Active Tasks!\n\n"
-        msg += f"Get your tasks status by adding me or user_id after cmd: /{BotCommands.StatusCommand[0]} me\n\n"
+        msg = "@Softleech! ❤️ 🇮🇳\n\nNo Active Tasks!\n\n"
+        msg += f"Check your DM for file!\n"
         msg += (
             f"\n<b>CPU:</b> {cpu_percent()}% | <b>FREE:</b> {free}"
             f"\n<b>RAM:</b> {virtual_memory().percent}% | <b>UPTIME:</b> {currentTime}"
