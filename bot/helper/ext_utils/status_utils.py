@@ -252,14 +252,14 @@ async def get_readable_message(
             and int(config_dict["AUTO_DELETE_MESSAGE_DURATION"]) > 0
         ):
             msg += (
-                f"<b><i>\n#Zee{index + start_position}: "
+                f"<b><i>\n#Softleech{index + start_position}: "
                 f"{escape(f"{task.name()}")}\n</i></b>"
                 if elapse <= config_dict["AUTO_DELETE_MESSAGE_DURATION"]
-                else f"\n<b>#Zee{index + start_position}...(Processing)</b>"
+                else f"\n<b>#Softleech{index + start_position}...(Processing)</b>"
             )
         else:
             msg += (
-                f"<b><i>\n#Zee{index + start_position}: "
+                f"<b><i>\n#Softleech{index + start_position}: "
                 f"{escape(f"{task.name()}")}\n</i></b>"
             )
         if tstatus not in [
