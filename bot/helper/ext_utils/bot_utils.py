@@ -247,7 +247,7 @@ async def get_telegraph_list(telegraph_content):
     path = [
         (
             await telegraph.create_page(
-                title="ᴢ-ᴍɪʀʀᴏʀ ᴅʀɪᴠᴇ ꜱᴇᴀʀᴄʜ",
+                title="Softleech Drive Search",
                 content=content
             )
         )["path"]
